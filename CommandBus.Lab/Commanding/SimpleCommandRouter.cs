@@ -14,9 +14,9 @@ namespace CommandBus.Lab.Commanding
             _routes.Add(typeof(T),command => handler((T)command));
         }
 
-        public Func<ICommand, Task> GetHandler<T>(T command) where T : ICommand
+        public Func<ICommand, Task> GetHandler(ICommand command)
         {
-            return _routes[typeof (T)];
+            return _routes[command.GetType()];
         }
     }
 }
