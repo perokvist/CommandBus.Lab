@@ -10,7 +10,7 @@ namespace CommandBus.Lab.Commanding
             CorrelationId = Guid.NewGuid();
         }
 
-        public Guid AggregateId { get; private set; }
-        public Guid CorrelationId { get; private set; }
+        public Guid AggregateId { get; set; }
+        public Guid CorrelationId { get; set; }
     }
 }

@@ -26,6 +26,18 @@ Source:
 	 _client = messagingFactory.CreateSubscriptionClient(topic, subscription);
     _client.RetryPolicy = new RetryExponential(...);
 
+
+###DeadLetter
+[Brokered Messaging: Dead Letter Queue](http://code.msdn.microsoft.com/windowsazure/Brokered-Messaging-Dead-22536dd8/sourcecode?fileId=76870&pathId=497121593)
+
+###Transient Block
+
+
+- [The Transient Fault Handling Application Block](http://msdn.microsoft.com/en-us/library/hh680934(v=pandp.50).aspx)
+- [Enterprise Library 5.0 - Transient Fault Handling Application Block 5.1.1212](http://www.nuget.org/packages/EnterpriseLibrary.WindowsAzure.TransientFaultHandling/)
+- [patterns & practices – Enterprise Library](http://entlib.codeplex.com/wikipage?title=EntLib5Azure)
+
+
 ###Sessions
 
 
@@ -37,20 +49,10 @@ Source:
 [Windows Azure Service Bus: Messaging Patterns Using Sessions](http://msdn.microsoft.com/en-us/magazine/jj863132.aspx)
 
 ###FIFO
-Ordering of commands could be important.
+If ordering is of importance.
 
 [Message ordering on Windows Azure Service Bus Queues](http://www.jayway.com/2013/12/20/message-ordering-on-windows-azure-service-bus-queues/)
 
-
-###DeadLetter
-[Brokered Messaging: Dead Letter Queue](http://code.msdn.microsoft.com/windowsazure/Brokered-Messaging-Dead-22536dd8/sourcecode?fileId=76870&pathId=497121593)
-
-###Transient Block
-
-
-- [The Transient Fault Handling Application Block](http://msdn.microsoft.com/en-us/library/hh680934(v=pandp.50).aspx)
-- [Enterprise Library 5.0 - Transient Fault Handling Application Block 5.1.1212](http://www.nuget.org/packages/EnterpriseLibrary.WindowsAzure.TransientFaultHandling/)
-- [patterns & practices – Enterprise Library](http://entlib.codeplex.com/wikipage?title=EntLib5Azure)
 
 ###Partitions
 [Partitioned Service Bus Queues and Topics](http://blogs.msdn.com/b/windowsazure/archive/2013/10/29/partitioned-service-bus-queues-and-topics.aspx)
